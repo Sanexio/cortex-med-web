@@ -1,0 +1,3 @@
+[submodule "apps/praxis-webseite"]
+	path = apps/praxis-webseite
+	url = git@github.com:Sanexio/praxiszentrum-theme.git

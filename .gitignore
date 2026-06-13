@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+*.pid
+*.swp
+__pycache__/
+*.pyc
+node_modules/
+.cortex-runtime/
+.tmp/
+.env
+.env.local
+
+# Bootstrap-Erzeugnisse (lokal, kein Code)
+.bootstrap-state.json
+
+# Tenant-Repos werden parallel geklont, nicht im Cortex-Med-Web-Tree
+/tenants/
