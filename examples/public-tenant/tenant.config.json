@@ -1,18 +1,119 @@
 {
-  "_note": "Public-Demo-Tenant für Cortex-Med-Web. Synthetische Daten, kein echter Patient-/MA-Bezug. Wird in Folgewelle 'Public-Tenant' mit vollem Mock-Datensatz befüllt.",
+  "_note": "Public-Demo-Tenant für Cortex-Med-Web. Synthetische Praxis 'Dr. Mustermann' mit fiktiven Mitarbeitenden. Wird per CORTEX_TENANT_DIR=Cortex-Med-Web/examples/public-tenant von den Med-Apps geladen. Enthält keine echten Patient-/MA-Daten.",
   "_schema_version": 1,
   "tenant_id": "public_demo",
   "display_name": "Praxis Demo Dr. Mustermann",
   "workforce": {
-    "_note": "Skeleton. Wird befüllt analog zu Sanexio-Tenant/tenant.config.json, aber mit synthetischen Werten.",
+    "_note": "Public-Demo-Workforce-Block. Standorte, Bereiche und Mitarbeitende sind synthetisch und dürfen nicht mit echten Praxen verwechselt werden.",
     "default_location_name": "Praxis Demo Dr. Mustermann",
-    "locations": [],
-    "work_area_categories": {},
-    "shift_schema": [],
-    "default_weekly_hours": {},
+    "locations": [
+      "Praxis Demo Nord",
+      "Praxis Demo Süd",
+      "Homeoffice"
+    ],
+    "work_area_categories": {
+      "Praxis Demo Dr. Mustermann": [
+        "Sprechstunde",
+        "Anmeldung",
+        "Labor",
+        "Funktion",
+        "Backoffice"
+      ]
+    },
+    "_default_weekly_hours_note": "Wochen-Soll je Mitarbeitende(r) in Stunden. Schlüssel = case-insensitive Match-Token auf normalisiertem Namen. 'default' greift, wenn keine Regel matched.",
+    "default_weekly_hours": {
+      "default": 40,
+      "by_name_tokens": [
+        { "tokens": ["anna"], "hours": 35 },
+        { "tokens": ["bert"], "hours": 40 },
+        { "tokens": ["carla"], "hours": 30 },
+        { "tokens": ["daniel"], "hours": 40 },
+        { "tokens": ["eva"], "hours": 25 }
+      ]
+    },
+    "_display_name_overrides_note": "Optionale Namens-Korrekturen für Anzeige (z.B. wenn die Datenquelle Namen invertiert liefert). Public-Demo: keine nötig.",
+    "display_name_overrides": [],
+    "_work_area_overrides_note": "Mapping fremder Bereich-Bezeichnungen auf interne Standardnamen. Public-Demo: keine nötig.",
+    "work_area_overrides": [],
+    "_short_area_overrides_note": "Optionale Kurzbezeichnungen für Bereiche in der UI (z.B. Spalten).",
+    "short_area_overrides": [],
+    "_aggregation_groups_note": "Spalten-Gruppen für aggregierte Auswertungen (z.B. Sprechstunde + Funktion = 'Patientenkontakt').",
+    "aggregation_groups": [
+      {
+        "id": "patient_contact",
+        "label": "Patientenkontakt",
+        "areas": ["Sprechstunde", "Labor", "Funktion"]
+      },
+      {
+        "id": "admin",
+        "label": "Verwaltung",
+        "areas": ["Anmeldung", "Backoffice"]
+      }
+    ],
+    "_default_calculation_note_note": "Standard-Erläuterung, die unter Soll/Ist-Tabellen erscheint.",
+    "default_calculation_note": "MFA-Zeiten werden nur über die Mitarbeiter-ID gezählt; der Arbeitsbereich ist Herkunft der Buchung, keine feste Zuordnung.",
+    "_shift_schema_note": "Schichtschema für die Schicht-Matrix. Ein Eintrag pro Standort-Kategorie.",
+    "shift_schema": [
+      {
+        "category": "Praxis Demo Dr. Mustermann",
+        "location_preference_tokens": [
+          ["nord"],
+          ["sud"],
+          ["süd"]
+        ],
+        "shifts": [
+          {
+            "id": "demo-sprechstunde",
+            "label": "Sprechstunde",
+            "aliases": ["Sprechstunde", "Dr. Mustermann Sprechstunde"],
+            "eligibility": "Dr. Mustermann"
+          },
+          {
+            "id": "demo-anmeldung",
+            "label": "Anmeldung",
+            "aliases": ["Anmeldung", "Empfang"],
+            "eligibility": "MFAs Anmeldung"
+          },
+          {
+            "id": "demo-labor",
+            "label": "Labor",
+            "aliases": ["Labor", "Labor / Diagnostik"],
+            "eligibility": "MFAs Labor"
+          },
+          {
+            "id": "demo-funktion",
+            "label": "Funktion",
+            "aliases": ["Funktion", "Funktionsdiagnostik"],
+            "eligibility": "MFAs Funktion"
+          },
+          {
+            "id": "demo-backoffice",
+            "label": "Backoffice",
+            "aliases": ["Backoffice", "Homeoffice"],
+            "eligibility": "alle MFAs"
+          }
+        ]
+      }
+    ],
+    "_sprechstunde_defaults_note": "Wenn der Arzt-Mitarbeiter 'Dr. Mustermann' aktiv ist, werden Sprechstunde-Shifts automatisch ihm zugewiesen.",
+    "sprechstunde_defaults": {
+      "doctor_employee_source_id": "employee-mustermann",
+      "work_area_label": "Sprechstunde",
+      "location_label": "Praxis Demo Nord"
+    },
+    "area_aggregations": {},
+    "tolerances": {
+      "monthly_over_soll_warn_percent": 5
+    },
+    "_auth_note": "Public-Demo läuft mit WORKFORCE_AUTH_DISABLE=1 (Dev-Bypass), kein Magic-Link, keine SMTP-Config nötig. Auth-Users-Liste leer.",
     "auth": {
-      "_note": "Public-Demo läuft mit Dev-Auth-Bypass; kein Magic-Link, keine SMTP-Config.",
       "users": []
+    },
+    "paths": {
+      "_note": "Pfade relativ zum Tenant-Root (also Cortex-Med-Web/examples/public-tenant/). Skript-tooling schreibt SQLite + Snapshots hier hin.",
+      "db_dir": "db/",
+      "db_filename": "arbeitszeiten.sqlite",
+      "imports_dir": "imports/"
     }
   }
 }

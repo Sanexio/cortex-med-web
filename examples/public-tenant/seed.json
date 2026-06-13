@@ -1,0 +1,3592 @@
+{
+  "_note": "Public-Demo-Seed für Cortex-Med-Web. Synthetische Praxis 'Dr. Mustermann' mit fiktiven Mitarbeitenden und 4 Wochen Time-Entries. Enthält keine echten Patient-/MA-Daten. Wird beim Service-Boot von server/db.js applyTenantSeed() in die SQLite-Datenbank geschrieben.",
+  "_generated_at": "2026-06-13T18:45:00Z",
+  "_generator": "Cortex-Med-Web public-tenant seed (statisch, kein extractor-Run)",
+  "_schema_version": 1,
+  "source_system": "public_demo_seed",
+  "batch_id_prefix": "public_demo",
+  "employees": [
+    {
+      "source_id": "employee-mustermann",
+      "display_name": "Dr. Markus Mustermann",
+      "role_title": "Arzt",
+      "initials": "MM",
+      "employment_status": "active"
+    },
+    {
+      "source_id": "employee-demo-anna",
+      "display_name": "Anna Beispiel",
+      "role_title": "Mitarbeiter",
+      "initials": "AB",
+      "employment_status": "active"
+    },
+    {
+      "source_id": "employee-demo-bert",
+      "display_name": "Bert Demo",
+      "role_title": "Mitarbeiter",
+      "initials": "BD",
+      "employment_status": "active"
+    },
+    {
+      "source_id": "employee-demo-carla",
+      "display_name": "Carla Mock",
+      "role_title": "Mitarbeiter",
+      "initials": "CM",
+      "employment_status": "active"
+    },
+    {
+      "source_id": "employee-demo-daniel",
+      "display_name": "Daniel Probe",
+      "role_title": "Mitarbeiter",
+      "initials": "DP",
+      "employment_status": "active"
+    },
+    {
+      "source_id": "employee-demo-eva",
+      "display_name": "Eva Test",
+      "role_title": "Mitarbeiter",
+      "initials": "ET",
+      "employment_status": "active"
+    }
+  ],
+  "locations": [
+    {
+      "source_id": "loc_demo_nord",
+      "name": "Praxis Demo Nord"
+    },
+    {
+      "source_id": "loc_demo_sud",
+      "name": "Praxis Demo Süd"
+    },
+    {
+      "source_id": "loc_homeoffice",
+      "name": "Homeoffice"
+    }
+  ],
+  "work_areas": [
+    {
+      "source_id": "area_sprechstunde",
+      "name": "Sprechstunde"
+    },
+    {
+      "source_id": "area_anmeldung",
+      "name": "Anmeldung"
+    },
+    {
+      "source_id": "area_labor",
+      "name": "Labor"
+    },
+    {
+      "source_id": "area_funktion",
+      "name": "Funktion"
+    },
+    {
+      "source_id": "area_backoffice",
+      "name": "Backoffice"
+    }
+  ],
+  "shifts": [
+    {
+      "source_id": "shift_demo_w1_d1_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-18",
+      "start_time": "07:30",
+      "end_date": "2026-05-18",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d1_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-18",
+      "start_time": "07:00",
+      "end_date": "2026-05-18",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d1_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-18",
+      "start_time": "08:00",
+      "end_date": "2026-05-18",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d1_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-18",
+      "start_time": "08:00",
+      "end_date": "2026-05-18",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d1_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-18",
+      "start_time": "08:30",
+      "end_date": "2026-05-18",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d1_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-18",
+      "start_time": "09:00",
+      "end_date": "2026-05-18",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d2_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-19",
+      "start_time": "07:30",
+      "end_date": "2026-05-19",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d2_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-19",
+      "start_time": "07:00",
+      "end_date": "2026-05-19",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d2_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-19",
+      "start_time": "08:00",
+      "end_date": "2026-05-19",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d2_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-19",
+      "start_time": "08:00",
+      "end_date": "2026-05-19",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d2_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-19",
+      "start_time": "08:30",
+      "end_date": "2026-05-19",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d2_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-19",
+      "start_time": "09:00",
+      "end_date": "2026-05-19",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d3_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-20",
+      "start_time": "07:30",
+      "end_date": "2026-05-20",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d3_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-20",
+      "start_time": "07:00",
+      "end_date": "2026-05-20",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d3_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-20",
+      "start_time": "08:00",
+      "end_date": "2026-05-20",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d3_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-20",
+      "start_time": "08:00",
+      "end_date": "2026-05-20",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d3_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-20",
+      "start_time": "08:30",
+      "end_date": "2026-05-20",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d3_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-20",
+      "start_time": "09:00",
+      "end_date": "2026-05-20",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d4_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-21",
+      "start_time": "07:30",
+      "end_date": "2026-05-21",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d4_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-21",
+      "start_time": "07:00",
+      "end_date": "2026-05-21",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d4_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-21",
+      "start_time": "08:00",
+      "end_date": "2026-05-21",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d4_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-21",
+      "start_time": "08:00",
+      "end_date": "2026-05-21",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d4_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-21",
+      "start_time": "08:30",
+      "end_date": "2026-05-21",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d4_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-21",
+      "start_time": "09:00",
+      "end_date": "2026-05-21",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d5_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-22",
+      "start_time": "07:30",
+      "end_date": "2026-05-22",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d5_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-22",
+      "start_time": "07:00",
+      "end_date": "2026-05-22",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d5_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-22",
+      "start_time": "08:00",
+      "end_date": "2026-05-22",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d5_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-22",
+      "start_time": "08:00",
+      "end_date": "2026-05-22",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d5_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-22",
+      "start_time": "08:30",
+      "end_date": "2026-05-22",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w1_d5_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-22",
+      "start_time": "09:00",
+      "end_date": "2026-05-22",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d1_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-25",
+      "start_time": "07:30",
+      "end_date": "2026-05-25",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d1_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-25",
+      "start_time": "07:00",
+      "end_date": "2026-05-25",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d1_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-25",
+      "start_time": "08:00",
+      "end_date": "2026-05-25",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d1_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-25",
+      "start_time": "08:00",
+      "end_date": "2026-05-25",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d1_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-25",
+      "start_time": "08:30",
+      "end_date": "2026-05-25",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d1_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-25",
+      "start_time": "09:00",
+      "end_date": "2026-05-25",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d2_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-26",
+      "start_time": "07:30",
+      "end_date": "2026-05-26",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d2_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-26",
+      "start_time": "07:00",
+      "end_date": "2026-05-26",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d2_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-26",
+      "start_time": "08:00",
+      "end_date": "2026-05-26",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d2_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-26",
+      "start_time": "08:00",
+      "end_date": "2026-05-26",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d2_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-26",
+      "start_time": "08:30",
+      "end_date": "2026-05-26",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d2_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-26",
+      "start_time": "09:00",
+      "end_date": "2026-05-26",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d3_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-27",
+      "start_time": "07:30",
+      "end_date": "2026-05-27",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d3_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-27",
+      "start_time": "07:00",
+      "end_date": "2026-05-27",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d3_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-27",
+      "start_time": "08:00",
+      "end_date": "2026-05-27",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d3_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-27",
+      "start_time": "08:00",
+      "end_date": "2026-05-27",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d3_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-27",
+      "start_time": "08:30",
+      "end_date": "2026-05-27",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d3_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-27",
+      "start_time": "09:00",
+      "end_date": "2026-05-27",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d4_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-28",
+      "start_time": "07:30",
+      "end_date": "2026-05-28",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d4_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-28",
+      "start_time": "07:00",
+      "end_date": "2026-05-28",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d4_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-28",
+      "start_time": "08:00",
+      "end_date": "2026-05-28",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d4_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-28",
+      "start_time": "08:00",
+      "end_date": "2026-05-28",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d4_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-28",
+      "start_time": "08:30",
+      "end_date": "2026-05-28",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d4_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-28",
+      "start_time": "09:00",
+      "end_date": "2026-05-28",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d5_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-29",
+      "start_time": "07:30",
+      "end_date": "2026-05-29",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d5_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-29",
+      "start_time": "07:00",
+      "end_date": "2026-05-29",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d5_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-29",
+      "start_time": "08:00",
+      "end_date": "2026-05-29",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d5_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-05-29",
+      "start_time": "08:00",
+      "end_date": "2026-05-29",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d5_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-05-29",
+      "start_time": "08:30",
+      "end_date": "2026-05-29",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w2_d5_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-05-29",
+      "start_time": "09:00",
+      "end_date": "2026-05-29",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d1_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-01",
+      "start_time": "07:30",
+      "end_date": "2026-06-01",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d1_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-01",
+      "start_time": "07:00",
+      "end_date": "2026-06-01",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d1_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-01",
+      "start_time": "08:00",
+      "end_date": "2026-06-01",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d1_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-01",
+      "start_time": "08:00",
+      "end_date": "2026-06-01",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d1_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-01",
+      "start_time": "08:30",
+      "end_date": "2026-06-01",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d1_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-01",
+      "start_time": "09:00",
+      "end_date": "2026-06-01",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d2_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-02",
+      "start_time": "07:30",
+      "end_date": "2026-06-02",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d2_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-02",
+      "start_time": "07:00",
+      "end_date": "2026-06-02",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d2_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-02",
+      "start_time": "08:00",
+      "end_date": "2026-06-02",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d2_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-02",
+      "start_time": "08:00",
+      "end_date": "2026-06-02",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d2_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-02",
+      "start_time": "08:30",
+      "end_date": "2026-06-02",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d2_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-02",
+      "start_time": "09:00",
+      "end_date": "2026-06-02",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d3_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-03",
+      "start_time": "07:30",
+      "end_date": "2026-06-03",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d3_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-03",
+      "start_time": "07:00",
+      "end_date": "2026-06-03",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d3_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-03",
+      "start_time": "08:00",
+      "end_date": "2026-06-03",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d3_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-03",
+      "start_time": "08:00",
+      "end_date": "2026-06-03",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d3_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-03",
+      "start_time": "08:30",
+      "end_date": "2026-06-03",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d3_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-03",
+      "start_time": "09:00",
+      "end_date": "2026-06-03",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d4_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-04",
+      "start_time": "07:30",
+      "end_date": "2026-06-04",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d4_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-04",
+      "start_time": "07:00",
+      "end_date": "2026-06-04",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d4_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-04",
+      "start_time": "08:00",
+      "end_date": "2026-06-04",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d4_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-04",
+      "start_time": "08:00",
+      "end_date": "2026-06-04",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d4_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-04",
+      "start_time": "08:30",
+      "end_date": "2026-06-04",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d4_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-04",
+      "start_time": "09:00",
+      "end_date": "2026-06-04",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d5_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-05",
+      "start_time": "07:30",
+      "end_date": "2026-06-05",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d5_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-05",
+      "start_time": "07:00",
+      "end_date": "2026-06-05",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d5_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-05",
+      "start_time": "08:00",
+      "end_date": "2026-06-05",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d5_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-05",
+      "start_time": "08:00",
+      "end_date": "2026-06-05",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d5_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-05",
+      "start_time": "08:30",
+      "end_date": "2026-06-05",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w3_d5_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-05",
+      "start_time": "09:00",
+      "end_date": "2026-06-05",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d1_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-08",
+      "start_time": "07:30",
+      "end_date": "2026-06-08",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d1_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-08",
+      "start_time": "07:00",
+      "end_date": "2026-06-08",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d1_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-08",
+      "start_time": "08:00",
+      "end_date": "2026-06-08",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d1_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-08",
+      "start_time": "08:00",
+      "end_date": "2026-06-08",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d1_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-08",
+      "start_time": "08:30",
+      "end_date": "2026-06-08",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d1_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-08",
+      "start_time": "09:00",
+      "end_date": "2026-06-08",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d2_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-09",
+      "start_time": "07:30",
+      "end_date": "2026-06-09",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d2_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-09",
+      "start_time": "07:00",
+      "end_date": "2026-06-09",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d2_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-09",
+      "start_time": "08:00",
+      "end_date": "2026-06-09",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d2_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-09",
+      "start_time": "08:00",
+      "end_date": "2026-06-09",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d2_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-09",
+      "start_time": "08:30",
+      "end_date": "2026-06-09",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d2_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-09",
+      "start_time": "09:00",
+      "end_date": "2026-06-09",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d3_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-10",
+      "start_time": "07:30",
+      "end_date": "2026-06-10",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d3_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-10",
+      "start_time": "07:00",
+      "end_date": "2026-06-10",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d3_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-10",
+      "start_time": "08:00",
+      "end_date": "2026-06-10",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d3_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-10",
+      "start_time": "08:00",
+      "end_date": "2026-06-10",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d3_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-10",
+      "start_time": "08:30",
+      "end_date": "2026-06-10",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d3_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-10",
+      "start_time": "09:00",
+      "end_date": "2026-06-10",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d4_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-11",
+      "start_time": "07:30",
+      "end_date": "2026-06-11",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d4_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-11",
+      "start_time": "07:00",
+      "end_date": "2026-06-11",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d4_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-11",
+      "start_time": "08:00",
+      "end_date": "2026-06-11",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d4_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-11",
+      "start_time": "08:00",
+      "end_date": "2026-06-11",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d4_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-11",
+      "start_time": "08:30",
+      "end_date": "2026-06-11",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d4_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-11",
+      "start_time": "09:00",
+      "end_date": "2026-06-11",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d5_mustermann",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-12",
+      "start_time": "07:30",
+      "end_date": "2026-06-12",
+      "end_time": "16:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-mustermann"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d5_anna",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-12",
+      "start_time": "07:00",
+      "end_date": "2026-06-12",
+      "end_time": "13:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-anna"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d5_bert",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-12",
+      "start_time": "08:00",
+      "end_date": "2026-06-12",
+      "end_time": "16:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-bert"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d5_carla",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "start_date": "2026-06-12",
+      "start_time": "08:00",
+      "end_date": "2026-06-12",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-carla"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d5_daniel",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "start_date": "2026-06-12",
+      "start_time": "08:30",
+      "end_date": "2026-06-12",
+      "end_time": "17:30",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-daniel"
+      ]
+    },
+    {
+      "source_id": "shift_demo_w4_d5_eva",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "start_date": "2026-06-12",
+      "start_time": "09:00",
+      "end_date": "2026-06-12",
+      "end_time": "14:00",
+      "required_staff": 1,
+      "note": "Demo-Schicht",
+      "assignment_employee_source_ids": [
+        "employee-demo-eva"
+      ]
+    }
+  ],
+  "absences": [
+    {
+      "source_id": "abs_demo_eva_homeoffice",
+      "employee_source_id": "employee-demo-eva",
+      "absence_type": "Fortbildung",
+      "starts_on": "2026-06-08",
+      "ends_on": "2026-06-08",
+      "status": "genehmigt",
+      "note": "Externe Schulung (Demo)"
+    },
+    {
+      "source_id": "abs_demo_carla_urlaub",
+      "employee_source_id": "employee-demo-carla",
+      "absence_type": "Urlaub",
+      "starts_on": "2026-06-15",
+      "ends_on": "2026-06-19",
+      "status": "offen",
+      "note": "Antrag (Demo)"
+    }
+  ],
+  "time_entries": [
+    {
+      "source_id": "time_demo_w1_d1_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-18",
+      "start_time": "07:30",
+      "end_date": "2026-05-18",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d1_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-18",
+      "start_time": "07:00",
+      "end_date": "2026-05-18",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d1_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-18",
+      "start_time": "08:00",
+      "end_date": "2026-05-18",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d1_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-18",
+      "start_time": "08:00",
+      "end_date": "2026-05-18",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d1_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-18",
+      "start_time": "08:30",
+      "end_date": "2026-05-18",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d1_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-18",
+      "start_time": "09:00",
+      "end_date": "2026-05-18",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d2_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-19",
+      "start_time": "07:30",
+      "end_date": "2026-05-19",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d2_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-19",
+      "start_time": "07:00",
+      "end_date": "2026-05-19",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d2_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-19",
+      "start_time": "08:00",
+      "end_date": "2026-05-19",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d2_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-19",
+      "start_time": "08:00",
+      "end_date": "2026-05-19",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d2_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-19",
+      "start_time": "08:30",
+      "end_date": "2026-05-19",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d2_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-19",
+      "start_time": "09:00",
+      "end_date": "2026-05-19",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d3_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-20",
+      "start_time": "07:30",
+      "end_date": "2026-05-20",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d3_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-20",
+      "start_time": "07:00",
+      "end_date": "2026-05-20",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d3_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-20",
+      "start_time": "08:00",
+      "end_date": "2026-05-20",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d3_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-20",
+      "start_time": "08:00",
+      "end_date": "2026-05-20",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d3_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-20",
+      "start_time": "08:30",
+      "end_date": "2026-05-20",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d3_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-20",
+      "start_time": "09:00",
+      "end_date": "2026-05-20",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d4_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-21",
+      "start_time": "07:30",
+      "end_date": "2026-05-21",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d4_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-21",
+      "start_time": "07:00",
+      "end_date": "2026-05-21",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d4_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-21",
+      "start_time": "08:00",
+      "end_date": "2026-05-21",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d4_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-21",
+      "start_time": "08:00",
+      "end_date": "2026-05-21",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d4_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-21",
+      "start_time": "08:30",
+      "end_date": "2026-05-21",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d4_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-21",
+      "start_time": "09:00",
+      "end_date": "2026-05-21",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d5_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-22",
+      "start_time": "07:30",
+      "end_date": "2026-05-22",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d5_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-22",
+      "start_time": "07:00",
+      "end_date": "2026-05-22",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d5_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-22",
+      "start_time": "08:00",
+      "end_date": "2026-05-22",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d5_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-22",
+      "start_time": "08:00",
+      "end_date": "2026-05-22",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d5_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-22",
+      "start_time": "08:30",
+      "end_date": "2026-05-22",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w1_d5_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-22",
+      "start_time": "09:00",
+      "end_date": "2026-05-22",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d1_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-25",
+      "start_time": "07:30",
+      "end_date": "2026-05-25",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d1_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-25",
+      "start_time": "07:00",
+      "end_date": "2026-05-25",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d1_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-25",
+      "start_time": "08:00",
+      "end_date": "2026-05-25",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d1_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-25",
+      "start_time": "08:00",
+      "end_date": "2026-05-25",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d1_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-25",
+      "start_time": "08:30",
+      "end_date": "2026-05-25",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d1_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-25",
+      "start_time": "09:00",
+      "end_date": "2026-05-25",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d2_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-26",
+      "start_time": "07:30",
+      "end_date": "2026-05-26",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d2_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-26",
+      "start_time": "07:00",
+      "end_date": "2026-05-26",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d2_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-26",
+      "start_time": "08:00",
+      "end_date": "2026-05-26",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d2_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-26",
+      "start_time": "08:00",
+      "end_date": "2026-05-26",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d2_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-26",
+      "start_time": "08:30",
+      "end_date": "2026-05-26",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d2_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-26",
+      "start_time": "09:00",
+      "end_date": "2026-05-26",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d3_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-27",
+      "start_time": "07:30",
+      "end_date": "2026-05-27",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d3_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-27",
+      "start_time": "07:00",
+      "end_date": "2026-05-27",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d3_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-27",
+      "start_time": "08:00",
+      "end_date": "2026-05-27",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d3_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-27",
+      "start_time": "08:00",
+      "end_date": "2026-05-27",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d3_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-27",
+      "start_time": "08:30",
+      "end_date": "2026-05-27",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d3_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-27",
+      "start_time": "09:00",
+      "end_date": "2026-05-27",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d4_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-28",
+      "start_time": "07:30",
+      "end_date": "2026-05-28",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d4_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-28",
+      "start_time": "07:00",
+      "end_date": "2026-05-28",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d4_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-28",
+      "start_time": "08:00",
+      "end_date": "2026-05-28",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d4_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-28",
+      "start_time": "08:00",
+      "end_date": "2026-05-28",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d4_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-28",
+      "start_time": "08:30",
+      "end_date": "2026-05-28",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d4_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-28",
+      "start_time": "09:00",
+      "end_date": "2026-05-28",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d5_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-05-29",
+      "start_time": "07:30",
+      "end_date": "2026-05-29",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d5_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-05-29",
+      "start_time": "07:00",
+      "end_date": "2026-05-29",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d5_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-05-29",
+      "start_time": "08:00",
+      "end_date": "2026-05-29",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d5_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-05-29",
+      "start_time": "08:00",
+      "end_date": "2026-05-29",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d5_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-05-29",
+      "start_time": "08:30",
+      "end_date": "2026-05-29",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w2_d5_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-05-29",
+      "start_time": "09:00",
+      "end_date": "2026-05-29",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d1_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-01",
+      "start_time": "07:30",
+      "end_date": "2026-06-01",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d1_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-01",
+      "start_time": "07:00",
+      "end_date": "2026-06-01",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d1_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-01",
+      "start_time": "08:00",
+      "end_date": "2026-06-01",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d1_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-01",
+      "start_time": "08:00",
+      "end_date": "2026-06-01",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d1_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-01",
+      "start_time": "08:30",
+      "end_date": "2026-06-01",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d1_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-01",
+      "start_time": "09:00",
+      "end_date": "2026-06-01",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d2_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-02",
+      "start_time": "07:30",
+      "end_date": "2026-06-02",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d2_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-02",
+      "start_time": "07:00",
+      "end_date": "2026-06-02",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d2_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-02",
+      "start_time": "08:00",
+      "end_date": "2026-06-02",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d2_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-02",
+      "start_time": "08:00",
+      "end_date": "2026-06-02",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d2_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-02",
+      "start_time": "08:30",
+      "end_date": "2026-06-02",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d2_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-02",
+      "start_time": "09:00",
+      "end_date": "2026-06-02",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d3_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-03",
+      "start_time": "07:30",
+      "end_date": "2026-06-03",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d3_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-03",
+      "start_time": "07:00",
+      "end_date": "2026-06-03",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d3_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-03",
+      "start_time": "08:00",
+      "end_date": "2026-06-03",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d3_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-03",
+      "start_time": "08:00",
+      "end_date": "2026-06-03",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d3_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-03",
+      "start_time": "08:30",
+      "end_date": "2026-06-03",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d3_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-03",
+      "start_time": "09:00",
+      "end_date": "2026-06-03",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d4_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-04",
+      "start_time": "07:30",
+      "end_date": "2026-06-04",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d4_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-04",
+      "start_time": "07:00",
+      "end_date": "2026-06-04",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d4_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-04",
+      "start_time": "08:00",
+      "end_date": "2026-06-04",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d4_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-04",
+      "start_time": "08:00",
+      "end_date": "2026-06-04",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d4_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-04",
+      "start_time": "08:30",
+      "end_date": "2026-06-04",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d4_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-04",
+      "start_time": "09:00",
+      "end_date": "2026-06-04",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d5_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-05",
+      "start_time": "07:30",
+      "end_date": "2026-06-05",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d5_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-05",
+      "start_time": "07:00",
+      "end_date": "2026-06-05",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d5_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-05",
+      "start_time": "08:00",
+      "end_date": "2026-06-05",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d5_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-05",
+      "start_time": "08:00",
+      "end_date": "2026-06-05",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d5_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-05",
+      "start_time": "08:30",
+      "end_date": "2026-06-05",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w3_d5_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-05",
+      "start_time": "09:00",
+      "end_date": "2026-06-05",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d1_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-08",
+      "start_time": "07:30",
+      "end_date": "2026-06-08",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d1_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-08",
+      "start_time": "07:00",
+      "end_date": "2026-06-08",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d1_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-08",
+      "start_time": "08:00",
+      "end_date": "2026-06-08",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d1_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-08",
+      "start_time": "08:00",
+      "end_date": "2026-06-08",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d1_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-08",
+      "start_time": "08:30",
+      "end_date": "2026-06-08",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d1_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-08",
+      "start_time": "09:00",
+      "end_date": "2026-06-08",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d2_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-09",
+      "start_time": "07:30",
+      "end_date": "2026-06-09",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d2_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-09",
+      "start_time": "07:00",
+      "end_date": "2026-06-09",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d2_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-09",
+      "start_time": "08:00",
+      "end_date": "2026-06-09",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d2_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-09",
+      "start_time": "08:00",
+      "end_date": "2026-06-09",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d2_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-09",
+      "start_time": "08:30",
+      "end_date": "2026-06-09",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d2_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-09",
+      "start_time": "09:00",
+      "end_date": "2026-06-09",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d3_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-10",
+      "start_time": "07:30",
+      "end_date": "2026-06-10",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d3_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-10",
+      "start_time": "07:00",
+      "end_date": "2026-06-10",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d3_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-10",
+      "start_time": "08:00",
+      "end_date": "2026-06-10",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d3_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-10",
+      "start_time": "08:00",
+      "end_date": "2026-06-10",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d3_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-10",
+      "start_time": "08:30",
+      "end_date": "2026-06-10",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d3_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-10",
+      "start_time": "09:00",
+      "end_date": "2026-06-10",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d4_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-11",
+      "start_time": "07:30",
+      "end_date": "2026-06-11",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d4_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-11",
+      "start_time": "07:00",
+      "end_date": "2026-06-11",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d4_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-11",
+      "start_time": "08:00",
+      "end_date": "2026-06-11",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d4_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-11",
+      "start_time": "08:00",
+      "end_date": "2026-06-11",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d4_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-11",
+      "start_time": "08:30",
+      "end_date": "2026-06-11",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d4_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-11",
+      "start_time": "09:00",
+      "end_date": "2026-06-11",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d5_mustermann",
+      "employee_source_id": "employee-mustermann",
+      "start_date": "2026-06-12",
+      "start_time": "07:30",
+      "end_date": "2026-06-12",
+      "end_time": "16:30",
+      "work_area_source_id": "area_sprechstunde",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d5_anna",
+      "employee_source_id": "employee-demo-anna",
+      "start_date": "2026-06-12",
+      "start_time": "07:00",
+      "end_date": "2026-06-12",
+      "end_time": "13:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d5_bert",
+      "employee_source_id": "employee-demo-bert",
+      "start_date": "2026-06-12",
+      "start_time": "08:00",
+      "end_date": "2026-06-12",
+      "end_time": "16:00",
+      "work_area_source_id": "area_labor",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 45,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d5_carla",
+      "employee_source_id": "employee-demo-carla",
+      "start_date": "2026-06-12",
+      "start_time": "08:00",
+      "end_date": "2026-06-12",
+      "end_time": "14:00",
+      "work_area_source_id": "area_anmeldung",
+      "location_source_id": "loc_demo_sud",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 30,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d5_daniel",
+      "employee_source_id": "employee-demo-daniel",
+      "start_date": "2026-06-12",
+      "start_time": "08:30",
+      "end_date": "2026-06-12",
+      "end_time": "17:30",
+      "work_area_source_id": "area_funktion",
+      "location_source_id": "loc_demo_nord",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 60,
+      "note": null
+    },
+    {
+      "source_id": "time_demo_w4_d5_eva",
+      "employee_source_id": "employee-demo-eva",
+      "start_date": "2026-06-12",
+      "start_time": "09:00",
+      "end_date": "2026-06-12",
+      "end_time": "14:00",
+      "work_area_source_id": "area_backoffice",
+      "location_source_id": "loc_homeoffice",
+      "status": "freigegeben",
+      "entry_type": "Arbeitszeit",
+      "paid_break_minutes": 0,
+      "unpaid_break_minutes": 0,
+      "note": null
+    }
+  ]
+}

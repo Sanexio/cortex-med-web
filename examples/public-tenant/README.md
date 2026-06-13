@@ -10,16 +10,22 @@ Fiktiver Tenant für Showcase-, Schulungs- und README-Zwecke.
   Cortex-Med-Web installiert hat, ohne einen privaten Tenant
   (`Sanexio-Tenant` o.ä.) konfiguriert zu haben.
 
-## Status (2026-06-13)
+## Status (2026-06-13, befüllt)
 
-Skeleton — `tenant.config.json` ist noch ein Stub. Wird in Folgewelle
-„Public-Tenant" befüllt:
-
-- 5 fiktive MFAs (`Anna Beispiel`, `Bert Demo`, …)
-- 3 Standorte (`Praxis Demo Süd`, `Praxis Demo Nord`, `Homeoffice`)
-- Shift-Schema analog zur echten Praxis, aber mit Demo-Namen
-- Synthetische Time-Entries für die letzten 4 Wochen (Stempelzeiten)
-- Synthetische Schichten + Absences
+- **6 fiktive Mitarbeitende**: Dr. Markus Mustermann (Arzt), Anna
+  Beispiel, Bert Demo, Carla Mock, Daniel Probe, Eva Test.
+- **3 Standorte**: Praxis Demo Nord, Praxis Demo Süd, Homeoffice.
+- **5 Arbeitsbereiche**: Sprechstunde, Anmeldung, Labor, Funktion,
+  Backoffice.
+- **Shift-Schema** mit 5 Shift-Templates für die Standort-Kategorie
+  „Praxis Demo Dr. Mustermann".
+- **120 synthetische Schichten + 120 Time-Entries** für 4 Wochen
+  (2026-05-18 bis 2026-06-12), 5-Tage-Woche.
+- **2 Abwesenheiten** (1 Fortbildung, 1 Urlaubsantrag).
+- **Aggregations-Gruppen** „Patientenkontakt" + „Verwaltung" für
+  Auswertungen.
+- **Wochen-Soll** variabel je Mitarbeitende (25 h Eva / 30 h Carla /
+  35 h Anna / 40 h Standard).
 
 ## Nutzung
 
